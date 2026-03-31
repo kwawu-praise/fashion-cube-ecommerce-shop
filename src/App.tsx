@@ -7,24 +7,28 @@ import BenefitBanner from "./components/BenefitBanner"
 import { DealsOfTheWeek } from "./components/DealsOfTheWeek"
 import { BestSellers } from "./components/BestSellers"
 import { Footer } from "./components/Footer"
+import AdminNavbar from "./components/Admin/AdminNavbar"
+import AdminHamburger from "./components/Admin/AdminHamburger"
+
 function App() {
 
 
   return (
-    <>
-      <div>
+    <div>
+      <AdminNavbar />
+      <AdminHamburger />
 
-        <NavbarWithSettings />
-        <Navbar />
-        <Hero />
-        <FirstHalfOfTheBody />
-        <Products />
-        <BenefitBanner />
-        <DealsOfTheWeek />
-        <BestSellers />
-        <Footer />
-      </div>
-    </>
+      {/*   <NavbarWithSettings /> */}
+      {/*   <Navbar /> */}
+      {/*   <Hero /> */}
+      {/*   <FirstHalfOfTheBody /> */}
+      {/*   <Products /> */}
+      {/*   <BenefitBanner /> */}
+      {/*   <DealsOfTheWeek /> */}
+      {/*   <BestSellers /> */}
+      {/*   <Footer /> */}
+      {/* </div> */}
+    </div >
   )
 }
 
