@@ -9,6 +9,7 @@ import { BestSellers } from "./components/BestSellers"
 import { Footer } from "./components/Footer"
 import AdminNavbar from "./components/Admin/AdminNavbar"
 import AdminHamburger from "./components/Admin/AdminHamburger"
+import AdminDashboard from "./components/Admin/AdminDashboard"
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
   return (
     <div>
       <AdminNavbar />
-      <AdminHamburger />
+      {/* <AdminHamburger /> */}
+      <AdminDashboard />
 
       {/*   <NavbarWithSettings /> */}
       {/*   <Navbar /> */}
