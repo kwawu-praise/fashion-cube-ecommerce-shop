@@ -10,15 +10,17 @@ import { Footer } from "./components/Footer"
 import AdminNavbar from "./components/Admin/AdminNavbar"
 import AdminHamburger from "./components/Admin/AdminHamburger"
 import AdminDashboard from "./components/Admin/AdminDashboard"
+import BestSellingProduct from "./components/Admin/BestSellingProduct"
 
 function App() {
 
 
   return (
     <div>
-      <AdminNavbar />
+      {/* <AdminNavbar /> */}
       {/* <AdminHamburger /> */}
-      <AdminDashboard />
+      {/* <AdminDashboard /> */}
+      <BestSellingProduct />
 
       {/*   <NavbarWithSettings /> */}
       {/*   <Navbar /> */}
@@ -30,6 +32,7 @@ function App() {
       {/*   <BestSellers /> */}
       {/*   <Footer /> */}
       {/* </div> */}
+
     </div >
   )
 }
