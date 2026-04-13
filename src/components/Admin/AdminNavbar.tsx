@@ -9,7 +9,7 @@ import { FaBell } from "react-icons/fa";
 const AdminNavbar = () => {
   return (
     <div>
-      <div className="flex h-16 items-center px-5 shadow-md/30">
+      <div className="flex h-16 items-center px-5 shadow-md/30 bg-white/95">
         <div className="flex w-[25%]  justify-between   items-center">
           <div>
             <h1 className="text-[#1e1e27] font-bold">

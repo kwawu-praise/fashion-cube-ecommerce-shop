@@ -16,11 +16,26 @@ function App() {
 
 
   return (
-    <div>
-      {/* <AdminNavbar /> */}
-      {/* <AdminHamburger /> */}
-      {/* <AdminDashboard /> */}
-      <BestSellingProduct />
+    <div className="relative w-full">
+      <div className="w-full">
+        <div className="w-full relative">
+
+          <div className="fixed w-full top-0 left-0 z-50"> <AdminNavbar /></div>
+        </div>
+        <div className="flex w-full mt-16 ">
+          <div className="w-[20%] relative" >
+
+            <div className="w-[20%] fixed"> <AdminHamburger /></div>
+          </div>
+
+          <div className="w-[80%]">
+            <div> <AdminDashboard /></div>
+            <div>  <BestSellingProduct /></div>
+
+          </div>
+
+        </div>
+      </div>
 
       {/*   <NavbarWithSettings /> */}
       {/*   <Navbar /> */}

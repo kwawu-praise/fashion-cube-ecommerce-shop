@@ -112,9 +112,9 @@ const AdminHamburger = () => {
 
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen ">
 
-      <main className="w-[20%]  h-full flex flex-col justify-between">
+      <main className="w-full  h-full flex flex-col justify-between">
         <div>
           {
             AdminHamburgerItems.map(({ title, subItems, icon: Icon, }) => (

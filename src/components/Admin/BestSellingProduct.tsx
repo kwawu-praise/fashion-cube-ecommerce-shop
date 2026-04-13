@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 interface ProductsTableTitleInterface {
   title: string[],
@@ -103,7 +104,7 @@ const BestSellingProduct = () => {
 
       ProductsTableTitle.map(({ title }) => (
         title.map((item) => (
-          <th className="text-center border text-white bg-blue-600 h-14">
+          <th className="text-center border text-white border-[#d8dbde] bg-blue-600 h-14">
             {item}
           </th>
 
@@ -127,10 +128,10 @@ const BestSellingProduct = () => {
         order,
         sales,
         action
-      }) => (
-        <tr key={uid} className="border-4 border-red-600 h-20">
-          <td className="border text-center">#{uid}</td>
-          <td className="border text-center h-full">{product.map(({ image, description }) => (
+      }, index) => (
+        <tr key={uid} className={`border border-[#d8dbde]  h-20 ${index % 2 === 0 ? "bg-gray-200" : "bg-white"} `}>
+          <td className="border text-center border-[#d8dbde] ">#{uid}</td>
+          <td className="border text-center h-full border-[#d8dbde] ">{product.map(({ image, description }) => (
             <div className="flex h-full space-x-4 p-3 items-center">
               <div className=" h-20 w-20">
                 <img src={image} className=" h-full w-full  object-cover " />
@@ -147,14 +148,14 @@ const BestSellingProduct = () => {
             </div>
           ))}</td>
 
-          <td className="border text-center">{category}</td>
-          <td className="border text-center">{brand}</td>
-          <td className="border text-center">{price}</td>
-          <td className="border text-center">{stock}</td>
-          <td className="border text-center">{rating}</td>
-          <td className="border text-center">{order}</td>
-          <td className="border text-center">{sales}</td>
-          <td className="border text-center">{action.map(({ view, edit, deleteAction }) => (
+          <td className="border border-[#d8dbde] text-center">{category}</td>
+          <td className="border border-[#d8dbde] text-center">{brand}</td>
+          <td className="border border-[#d8dbde] text-center">{price}</td>
+          <td className="border border-[#d8dbde] text-center">{stock}</td>
+          <td className="border border-[#d8dbde] text-center">{rating}</td>
+          <td className="border border-[#d8dbde] text-center">{order}</td>
+          <td className="border border-[#d8dbde] text-center">{sales}</td>
+          <td className="border border-[#d8dbde] text-center">{action.map(({ view, edit, deleteAction }) => (
             <div>
               <div>
                 <div>{view}</div>
@@ -171,34 +172,39 @@ const BestSellingProduct = () => {
 
 
 
+
   return (
-    <div>
-      <main>
+    <div className="w-full p-5">
+      <main className=" w-full shadow-lg/50 rounded-2xl p-5">
         <div>
-          <h2>Best Selling Products</h2>
+          <h2 className="font-bold  text-3xl">Best Selling Products</h2>
         </div>
-        <div>
-          <div>
-            <p>SHOW BY</p>
-            <select>
-              <option>None</option>
-              <option>ten</option>
-              <option>ten</option>
-              <option>ten</option>
+        <div className="flex space-x-16 mt-10" >
+          <div >
+            <p className="text-xl font-medium">SHOW BY</p>
+            <div className="border  border-[#bfbebd] w-50 h-10 rounded-lg px-3 my-5 ">
+              <select className=" w-full h-10 ">
+                <option>None</option>
+                <option>ten</option>
+                <option>ten</option>
+                <option>ten</option>
 
-            </select>
+              </select>
 
+
+            </div>
           </div>
           <div>
-            <p>CATEGORY BY</p>
-            <select>
-              <option>None</option>
-              <option>ten</option>
-              <option>ten</option>
-              <option>ten</option>
+            <p className="text-xl font-medium">CATEGORY BY</p>
+            <div className="border border-[#bfbebd] w-50 h-10 rounded-lg px-3 my-5  ">
+              <select className="w-full h-10">
+                <option>None</option>
+                <option>ten</option>
+                <option>ten</option>
+                <option>ten</option>
 
-            </select>
-
+              </select>
+            </div>
           </div>
 
         </div>
